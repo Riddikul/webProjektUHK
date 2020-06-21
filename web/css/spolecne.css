@@ -1,0 +1,411 @@
+*
+{
+font-size: 16px;      /* nastavení velikosti písma na 16px */ 
+margin: 0px;          /* vnější odsazení */ 
+padding: 0px;     /*vnitřní odsazení */ 
+font-family: Roboto, sans-serif;   /* nastavení stylu písma */ 
+color: #616161;   /* barva písma */
+}
+
+main
+{
+padding: 100px 25px 30px 25px;     /* vnitřní odsazení */
+}
+
+
+
+/* Stylování nav pro web*/
+nav
+{
+z-index: 1;          /* vždy navrchu */ 
+position: fixed;    /* stejná pozice */ 
+width: 100%;        /* šířka 100% */ 
+height: 65px;
+background-color:#212121;  /* barva pozadí */ 
+padding-bottom: 3px;   /* vnitřní odsazení */
+}
+
+nav p a
+{
+padding: 5px 20px; /* vnitřní odsazení */ 
+font-size: 40px;  /* nastavení velikosti písma na 40px */ 
+float: left;     /* obtékání zleva */
+color: #fff;    /*barva písma */
+text-decoration: none;   /* vypnutí textových dekorací */ 
+}
+
+nav ul
+{
+float: right;      /* obtékání zprava */
+}
+
+nav ul li
+{
+float: left;      /* obtékaní zleva */
+position: relative;   /* relativní pozice */
+list-style: none; /* žádný list style */
+}
+
+nav ul li a
+{
+padding: 20px 15px;     /* vnitřní odsazení */
+font-size: 20px;    /* velikost písma*/
+display: block;     /* blokové zobrazení */
+color: #fff; /* barva písma */ 
+background-color: #212121;  /* barva pozadí */
+text-decoration: none;      /* vypnutí textových dekorací */ 
+}
+
+nav ul li ul
+{
+position: absolute; /* absolutní pozice */
+display: none;  /* vypnutí zobrazovaní */ 
+}
+
+nav ul li ul li
+{
+width: 300px;   /* nastavení šířky */ 
+}
+
+nav ul li ul li a
+{
+padding: 10px 15px;   /* vnitřní odsazení */
+}
+
+nav ul li a:hover   /* při najetí myší */ 
+{
+border-bottom: 3px solid #fff;  /* spodní bílý rámeček */ 
+color: #616161;  /* barva písma */ 
+}
+
+nav ul li:hover ul   
+{
+display: block;    /* blokové zobrazení */
+opacity: 0.9;    /* průhlednost */
+}
+
+.active
+{
+border-bottom: 3px solid #fff;     /* spodní bílý rámeček */
+}
+
+
+
+h1
+{
+font-size: 40px;    /* velikost písma */
+padding-top: 10px;     /* vnitřní odsazení */
+padding-bottom:20px;    /* vnitřní odsazení */
+color: black;     /* barva textu */ 
+}
+
+h2,h3,h4
+{
+font-size: 25px;     /* velikost písma */ 
+color: black;       /* barva textu */ 
+}
+
+
+
+
+
+/* Stylování footeru */
+.containerFooter
+{
+width: 100%;      /* šířka */
+background-color: #f1f2f3;   /* barva pozadí */
+height: 100px;      /* výška */ 
+display: flex;     /* definování flexboxu */
+}
+
+.SN
+{
+padding-left: 15px;     /* vnitřní odsazení */
+text-align: left;     /* zarovnání textu vlevo */ 
+width: 32%;      /* šířka */ 
+background-color: #f1f2f3;    /* barva pozadí */ 
+}
+
+.SN a 
+{
+text-decoration: none;   /* žádné textové dekorece */
+background-color: #f1f2f3;     /* barva pozadí */ 
+}
+
+.doba
+{
+width: 32%;     /* šířka */ 
+padding-top: 15px;     /* vnitřní odsazení */ 
+font-weight: bold;    /* tučné písmo */ 
+}
+
+.doba p
+{
+text-align: center;    /* zarovnání textu na střed */ 
+color: #616161;   /* barva textu */ 
+background-color:#f1f2f3;      /* barva pozadí */ 
+}
+
+.copy
+{
+width: 32%;        /* šířka */ 
+font-weight: bold;      /* tučné písmo */ 
+text-align: right;     /* zarovnání textu doprava */ 
+padding-top: 50px;         /* vnitřní odsazení */ 
+color:#616161;         /* barva textu */ 
+background-color:#f1f2f3;         /* barva pozadí */ 
+}
+
+.social
+{
+padding-top: 30px;    /* vnitřní odsazení */ 
+max-height: 50px;     /* maximální výška */
+max-width: 50px;      /* maximální šířka */ 
+background-color:#f1f2f3;        /* barva pozadí */ 
+}
+
+
+
+
+/* Stylování nav pro menší zařízení */
+.side-nav
+{
+height: 100%;        /* výška */ 
+width: 0px;            /* šířka */ 
+position: fixed;      /* fixní pozice */
+z-index: 1;         /* vždy navrchu */ 
+background-color:#212121;        /* barva pozadí */ 
+opacity: 0.9;           /* průhlednost */ 
+overflow-x: hidden;        /* vypnutí spodního posuvníku */ 
+padding-top: 60px;      /* vnitřní odsazení */ 
+transition: 0.5s;            /* nastavení doby přechodu */ 
+}
+
+.side-nav a
+{
+padding: 10px 10px 10px 30px;      /* vnitřní odsazení */ 
+text-decoration: none;       /* žádné textové dekoreace */ 
+font-size: 22px;       /* nastavení velikost písma */ 
+color: #fff;        /* barva textu */ 
+display: block;       /* blokové zobrazení */ 
+transition: 0.3s;         /* nastavení doby přechodů */ 
+}
+        
+.side-nav a:hover 
+{
+color:#616161;        /* barva textu */ 
+}
+
+.btn-close 
+{
+position: absolute;    /* absolutní pozice */ 
+top: 0;                 /* žádné obsazení zhora */ 
+right: 22px;         /* odsazení zprava */ 
+}
+
+.open-slide
+{
+display: none;      /* tlačítko na menu pro menší zařízení se nezobrazuje */ 
+}
+
+.menu    /* obrázek pro menu na menší zařízení */ 
+{
+width: 50px;    /* šířka */ 
+height: 50px;  /* výška */ 
+}
+
+
+
+
+
+/* zobrazení pro mobily */ 
+@media only screen and (max-width: 480px) {
+
+.containerFooter 
+{
+flex-direction: column;   /* položky se zobrazí ve sloupci */ 
+}
+
+nav p a 
+{
+float: left;     /* obtékaní zleva */ 
+max-height: 25px;     /* maximální výška */ 
+font-size: 20px;      /* velikost písma */ 
+max-width: 70%;        /* maximální šířka */ 
+}
+
+nav 
+{
+width: 100%;       /* šířka */ 
+}
+
+nav ul 
+{
+display: none;       /* menu pro větší zařízení se nezobrazí */ 
+}
+
+.open-slide 
+{
+display: block;         /*  blokové zobrazení */ 
+float: right;        /* obtékání zprava */ 
+height: 65px;     /* výška */ 
+padding-top: 5px;    /* vnitřní odsazení */ 
+padding-right: 10px;       /* vnitřní odsazení */ 
+} 
+
+main
+{
+padding-left: 0px;     /* vnitřní odsazení */ 
+padding-right: 0px;      /* vnitřní odsazení */ 
+margin-left: 5px;       /* vnější odsazení */ 
+margin-right: 15px;      /* vnější odsazení */ 
+padding-top: 70px;     /* vnitřní odsazení */ 
+text-align: center;       /* zarovnání textu na střed */ 
+padding-bottom: 60px;        /* vnitřní odsazení */ 
+width: 100%;     /* šířka */ 
+max-width: 100%;      /* maximální šířka */ 
+}
+
+.copy
+{
+text-align: center;      /* zarovnání textu na střed */ 
+margin:0px;       /* vnější odsazení */ 
+width: 100%;   /* šířka */ 
+max-width: 100%;   /* maximální šířka */ 
+padding-top: 10px;      /* vnitřní odsazení */ 
+}
+
+.doba
+{
+padding-bottom: 0px;     /* vnitřní odsazení */ 
+text-align: center;  /* zarovnání textu na střed */ 
+width: 100%;       /* šířka */ 
+}
+
+.social
+{
+margin-left: 0px; /* vnější odsazení */             
+max-height: 35px;     /* maximální výška */ 
+max-width: 35px;      /* maximální šířka */ 
+text-align: center;     /* zarovnání textu na střed */ 
+}
+
+.SN 
+{
+width: 100%;    /* šířka */
+max-width: 100%;    /* maximální šířka */
+text-align: center;       /* zarovnání textu na střed */ 
+padding-bottom: 0px;     /* vnitřní odsazení */ 
+padding-top: 10px;     /* vnitřní odsazení */ 
+padding-left: 0px;      /* vnitřní odsazení */ 
+}
+
+}
+
+
+
+
+/* zobrazení pro tablety */ 
+@media only screen and (min-width:481px) and (max-width: 768px){
+
+
+
+nav 
+{
+width: 100%;    /* šířka */ 
+}
+
+nav ul 
+{
+display: none;     /* menu pro větší zařízení se nezobrazí */ 
+}
+
+.open-slide 
+{
+display: block;  /* blokobé zobrazení */ 
+float: right;     /* obtékání zprava */
+height: 65px;    /* výška */ 
+padding-top: 5px;     /* vnitřní odsazení */ 
+padding-right: 10px;     /* vnitřní odsazení */ 
+}
+
+main
+{
+max-width: 100%;      /* maximální šířka */ 
+padding-top: 130px;     /* vnitřní odsazení */ 
+}
+
+h1 
+{
+max-width: 100%;      /* vnitřní odsazení */ 
+padding-top: 30px;     /* vnitřní odsazení */ 
+text-align:center;     /* zarovnání textu na střed */ 
+}
+
+}
+
+/* zobrazení pro tablety a menší monitory */ 
+@media only screen and (min-width: 769px) and (max-width:1150px){
+
+
+main
+{
+max-width: 100%;         /* maximální šířka */
+padding-top: 130px;      /* vnitřní odsazení */ 
+}
+
+
+nav p a 
+{
+float: left;    /* obtékaní zleva */ 
+max-height: 25px;      /* maximální výška */ 
+font-size: 20px;     /* velikost písma */ 
+max-width: 70%;       /* maximální šířka */
+}
+nav ul
+{
+display: none;     /* menu pro větší zařízení se nezobrazí */ 
+}
+
+.open-slide 
+{
+display: block;    /* blokové zobrazení */ 
+float: right;     /* obtékání zprava */ 
+height: 65px;      /* výška */ 
+padding-top: 5px;       /* vnitřní odsazení */ 
+padding-right: 10px;         /* vnitřní odsazení */ 
+}
+
+}
+
+
+/* tiskárna */ 
+@media only print {
+
+* 
+{
+color: black;     /* barva textu */ 
+}
+
+nav 
+{
+display: none;       /* nav se nezobrazí */ 
+}
+
+h1
+{
+padding-top: 0px;      /* vnitřní odsazení */ 
+}
+
+main
+{
+padding: 0px;     /* vnitřní odsazení */ 
+margin: 0px;      /* vnitřní odsazení */
+}
+
+footer 
+{
+display: none;     /* patička se nezobrazí */ 
+}
+
+}

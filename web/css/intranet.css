@@ -1,0 +1,10 @@
+.log
+{text-align: center;      /* zarovnání textu na střed */ 
+	padding-top: 30px;      /* vnitřní odsazení */ 
+
+
+}
+.log p 
+{
+padding-top: 10px;       /* vnitřní odsazení */ 
+} 

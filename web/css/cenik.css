@@ -1,0 +1,72 @@
+div
+{
+text-align: center;   /* zarovnání textu na sřed */ 
+}
+
+
+th
+{
+color: #616161;  /* barva textu */ 
+background-color: #f1f2f3;      /* barva pozadí */ 
+}
+
+th,td
+{
+padding: 10px;      /* vnitřní odsazení */ 
+}
+
+.tabulka
+{
+padding-top: 80px;       /* vnitřní odsazení */ 
+padding-bottom: 80px;      /* vnitřní odsazení */ 
+width: 100%;        /* šířka */ 
+display: flex;        /* definování flexboxu */ 
+justify-content: center;        /* objekt na střed */ 
+}
+
+table, th,td
+{
+border: 1px solid #eee;       /* rámeček */ 
+border-collapse: collapse;  /* jedna linka rámečku */ 
+color: #000;      /* barvaa textu */ 
+width: 50%;         /* šířka */ 
+max-width: 100%;          /* maximální šířka */ 
+text-align: center;        /* zarovnání textu na sřed */
+}
+
+
+/* zobrazení pro mobily */
+@media only screen and (max-width: 480px) {
+
+table, th,td
+{
+width: 100%;    /* šířka */
+}
+
+}
+
+
+/* zobrazení pro tablety */
+@media only screen and (min-width: 481px) and (max-width: 768px){
+
+table, th,td
+{
+width: 100%;        /* šířka */
+}
+
+}
+
+
+/* zobrazení pro tablety a menší monitory */
+@media only screen and (min-width: 769px) and (max-width:1150px){
+
+	}
+
+
+
+/* tiskárna */
+@media only print {
+
+
+
+	}

@@ -1,0 +1,77 @@
+
+main div p
+{
+padding-bottom: 15px;    /* odstavce mají spodní odsazení 15px */ 
+}
+
+#mapa
+{
+border: none;      /* mapa nemá rámeček */
+}
+
+.container 
+{
+display: flex;      /* definování flexboxu */
+justify-content: space-between;   /* věci mají mezi sebou místo */
+}
+
+.box1 
+{
+width: 50%;    /* nastavení šířky na 50% */
+}
+
+
+
+/* zobrazení na mobily */
+@media only screen and (max-width: 480px) {
+
+
+.box1,.box2, #mapa 
+{
+width: 100%;     /* nastavení šířky na 100% */ 
+}
+
+.container 
+{
+flex-direction: column;  /* položky se zobrazí ve sloupci */
+}
+
+}
+
+
+
+/* zobrazení pro tablety */ 
+@media only screen and (min-width: 481px) and (max-width: 768px){
+
+.container 
+{
+flex-direction: column;         /* položky se zobrazí ve sloupci */
+}
+
+
+
+/* zobrazení pro tablety a menší monitory */ 
+@media only screen and (min-width: 769px) and (max-width:1150px){
+
+}
+
+
+/* zobrazení pro tiskánry */
+@media only print {
+
+main div p
+{
+padding-bottom: 5px;  /* odstavce mají spodní odsazení 5px */ 
+}
+
+article
+{
+width: 50%;    /* šířka 50% */ 
+}
+
+#mapa 
+{
+width: 50%;     /* šířka 50% */ 
+}
+
+}

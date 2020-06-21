@@ -1,0 +1,72 @@
+h2,h4
+{
+padding-top: 40px; /* vnitřní odsazení */
+}
+
+h2,h4
+{
+padding-bottom: 10px; /* vnitřní odsazení */
+}
+
+main ul 
+{
+padding: 10px 0px 0px 20px; /* vnitřní odsazení */
+}
+
+main ul li 
+{
+padding: 5px 0px 0px 5px; /* vnitřní odsazení */
+}
+
+.video
+{
+padding-top: 20px; /* vnitřní odsazení */
+}
+
+h5
+{
+padding-top: 15px;          /* vnitřní odsazení */
+}
+
+audio 
+{
+max-width: 100%;            /* maximální šířka */
+padding-top: 5px;        /* vnitřní odsazení */
+}
+
+/* zobrazení pro mobily */ 
+@media only screen and (max-width: 480px){
+
+.video
+{
+max-width: 100%;  /* maximální šířka */
+width: 100%;      /* šířka */
+}
+
+}
+
+
+/* zobrazení pro tablety */
+@media only screen and (min-width: 481px) and (max-width: 768px){
+
+
+}
+
+
+/* zobrazení pro tablety a menší monitory */ 
+@media only screen and (min-width: 769px) and (max-width:1150px){
+
+}
+
+
+/* tiskárna */
+@media only print {
+
+.video, audio, h5
+{
+display: none;  /* věci se nezobrazí */
+}	
+
+
+}
+

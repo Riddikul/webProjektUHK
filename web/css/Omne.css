@@ -1,0 +1,156 @@
+main p
+{
+padding-bottom: 25px;  /* vnitřní odsazení */ 
+}
+
+h3
+{
+padding-top: 40px;  /* vnitřní odsazení */ 
+}
+
+.diplomy img
+{
+height:200px;    /* výška */ 
+width: 150px;    /* šířka */ 
+padding-right: 15px;   /* vnitřní odsazení */ 
+}
+
+.container 
+{
+display: flex;      /* definování flexboxu */
+justify-content: space-between;     /* prostor mezi objekty */ 
+width:100%;       /* šířka */ 
+} 
+
+.box1 {
+max-width: 60%;      /* maximální šířka */ 
+}
+.box2
+{
+max-width: 30%;     /* maximální šířka */ 
+}  
+
+
+
+
+/* zobrazení pro mobily */
+@media only screen and (max-width: 480px) {
+
+
+.container 
+{
+flex-direction: column;      /* zobrazení objektů ve sloupci */ 
+}
+
+.box1
+{
+width: 100%;    /* šířka */ 
+max-width: 100%;      /* maximální šířka */ 
+}
+
+.box2
+{
+width: 100%;    /* šířka */ 
+max-width: 100%;       /* maximální šířka */ 
+}
+
+.profilovka
+{
+padding-top: 30px;       /* vnitřní odsazení */ 
+width: 100%;         /* šířka */ 
+max-height: 330px;      /* maximální šířka */ 
+}
+
+}
+
+
+/* zobrazení pro tablety */
+@media only screen and (min-width: 481px) and (max-width: 768px){
+
+
+.container 
+{
+flex-direction: column;       /* zobrazení objektů ve sloupci */
+}
+
+.box1
+{
+width: 100%;         /* šířka */ 
+align-content: center;       /* zarovnání textu na střed */ 
+max-width: 100%;         /* maximální šířka */ 
+}
+
+.box2
+{
+width: 100%;         /* šířka */ 
+max-width: 100%;       /* maximální šířka */ 
+align-content: center;         /* zarovnání textu na střed */ 
+}
+
+article div, article
+{
+width: 100%;         /* šířka */ 
+max-width: 100%;       /* maximální šířka */ 
+text-align: center;         /* zarovnání textu na střed */ 
+}
+
+.profilovka
+{
+width: 75%;            /* šířka */ 
+max-width: 100%;         /* maximální šířka */ 
+align-content: center;         /* zarovnání textu na střed */ 
+}
+
+}
+
+
+/* zobrazení pro tablety a menší monitory */
+@media only screen and (min-width: 769px) and (max-width:1150px){
+
+.container
+{
+flex-direction: column;         /* zobrazení objektů ve sloupci */
+}
+
+.box1
+{
+align-content: center;        /* zarovnání textu na střed */ 
+max-width: 100%;       /* maximální šířka */ 
+}
+
+.box2
+{
+max-width: 100%;         /* maximální šířka */ 
+align-content: center;      /* zarovnání textu na střed */
+}
+
+
+
+}
+
+
+/* tiskárna */
+@media only print {
+
+article div, article
+{
+float: left;         
+margin: 0px;      /* vnější odsazení */ 
+padding: 0px;       /* vnitřní odsazení */ 
+width: 75%;        /* šířka */ 
+}
+
+.profilovka
+{
+height: 300px;     /* výška */ 
+width: 220px;             /* šířka */ 
+float: left;        
+margin-top: 200px;        /* vnější odsazení */ 
+}
+
+.diplomy, .diplomy img, h3
+{
+display: none;         /* diplomy se nezobrazí */ 
+}
+
+}

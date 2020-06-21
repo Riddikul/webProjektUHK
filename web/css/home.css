@@ -1,0 +1,154 @@
+h2,h3
+{
+padding: 10px 0px 10px 0px;    /* vnitřní odsazení */
+}
+
+.info, .kriteria
+{
+align-content: center;    /* zarovnání textu na střed */ 
+max-width: 100%;      /* maximální šířka */ 
+width: 100%;         /* šířka */ 
+}
+
+.profilovka
+{
+float: left;      /* obtékání zleva */ 
+padding-top: 70px;      /* vnitřní odsazení */
+width: 25%;       /* šířka */ 
+}
+
+.sluzby
+{
+padding-top: 70px;      /* vnitřní odsazení */
+padding-left: 35px;        /* vnitřní odsazení */
+width: 70%;        /* šířka */ 
+float:left;        /* obtékání zleva */
+}
+
+.sluzby li
+{
+padding-bottom: 10px;        /* vnitřní odsazení */
+}
+
+.back
+{
+width: 100%;         /* šířka */ 
+height: 400px;        /* výška */ 
+padding-top: 20px;             /* vnitřní odsazení */
+}
+
+table
+{
+width: 95%;      /* šířka */ 
+padding-top: 30px;            /* vnitřní odsazení */
+padding-bottom: 50px;      /* vnitřní odsazení */
+text-align: center;        /* zarovnání textu na střed */ 
+}
+
+th,td
+{
+padding: 10px;             /* vnitřní odsazení */
+}
+
+
+
+/* zobrazení pro mobily */
+@media only screen and (max-width: 480px) {
+
+.profilovka
+{
+float: none;        /* žádné obtékání */ 
+padding-top: 30px;         /* vnitřní odsazení */
+width: 100%;       /* šířka */ 
+max-width: 100%;       /* maximální šířka */ 
+max-height: 330px;      /* maximální výška */ 
+}
+
+.sluzby
+{
+width: 80%;         /* šířka */ 
+padding-top: 20px;         /* vnitřní odsazení */
+float: none;         /* žádné obtékání */ 
+max-width: 80%;       /* maximální šířka */ 
+}
+
+.back
+{
+height: 200px;      /* výška */ 
+width: 100%;       /* šířka */ 
+max-width: 100%;      /* maximální šířka */ 
+}
+
+th,td
+{
+padding: 5px;      /* vnitřní odsazení */
+}
+
+}
+
+
+
+/* zobrazení pro tablety */ 
+@media only screen and (min-width: 481px) and (max-width: 768px){
+
+.profilovka
+{
+padding-top: 140px;      /* vnitřní odsazení */
+height: 300px;       /* výška */ 
+width: 40%;      /* šířka */ 
+}
+
+.sluzby
+{
+padding-top: 70px;       /* vnitřní odsazení */
+padding-left: 35px;        /* vnitřní odsazení */
+width: 55%;       /* šířka */ 
+float:left;	 /* žádné obtékání */ 
+}
+
+.sluzby li
+{
+padding-bottom: 10px;         /* vnitřní odsazení */
+}
+
+.back
+{
+width: 100%;      /* šířka */ 
+height: 400px;         /* výška */ 
+padding-top: 20px;          /* vnitřní odsazení */
+}
+
+}
+
+/* zobrazení pro tablety a menší monitory */ 
+@media only screen and (min-width: 769px) and (max-width:1100px){
+
+}
+
+
+/* tiskárna */ 
+@media only print{
+
+.back
+{
+display: none;      /* obrázek se nezobrazí */ 
+}
+
+.profilovka
+{
+float: left;     /* žádné obtékání */ 
+padding-top: 30px;         /* vnitřní odsazení */
+width: 240px;        /* šířka */ 
+height: 340px;     /* výška */ 
+}
+
+table
+{
+padding-top: 150px;         /* vnitřní odsazení */
+}
+
+}
+
+
+
+
